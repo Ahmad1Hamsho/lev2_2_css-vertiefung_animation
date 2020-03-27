@@ -1,0 +1,85 @@
+.sec1 {
+  position: absolute;
+  width: 30vw;
+  height: 50vh;
+  border: 2px solid black;
+}
+
+.circle {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 50%;
+  animation-name: circle1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes circle1 {
+  0% {
+    transform: translate(0, 0);
+    background-color: red;
+  }
+  25% {
+    transform: translate(25vw, 0);
+    background-color: yellow;
+  }
+  50% {
+    transform: translate(25vw, 40vh);
+    background-color: greenyellow;
+  }
+  75% {
+    transform: translate(0, 40vh);
+    background-color: blue;
+  }
+  100%
+}
+
+.sec2 {
+  position: absolute;
+  left: 40vw;
+  width: 30vw;
+  height: 50vh;
+  border: 2px solid black;
+  display: flex;
+}
+
+div {
+  position: relative;
+  width: 6vw;
+  height: 50vh;
+  border: 1px solid red;
+  text-align: center;
+  font-size: 1.5em;
+  animation: level2 infinite linear alternate-reverse backwards running;
+}
+div:nth-child(1) {
+  animation-duration: 2000ms;
+}
+div:nth-child(2) {
+  animation-duration: 1000ms;
+}
+div:nth-child(3) {
+  animation-duration: 500ms;
+}
+div:nth-child(4) {
+  animation-duration: 250ms;
+}
+div:nth-child(5) {
+  animation-duration: 125ms;
+}
+
+p {
+  margin-top: 20vh;
+}
+@keyframes level2 {
+  from {
+    color: black;
+    background-color: white;
+  }
+  to {
+    color: white;
+    background-color: gray;
+  }
+}

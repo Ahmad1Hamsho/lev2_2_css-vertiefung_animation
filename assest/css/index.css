@@ -54,19 +54,19 @@ div {
   font-size: 1.5em;
   animation: level2 infinite linear alternate-reverse backwards running;
 }
-div:nth-child(1) {
+div:nth-child(2) {
   animation-duration: 2000ms;
 }
-div:nth-child(2) {
+div:nth-child(3) {
   animation-duration: 1000ms;
 }
-div:nth-child(3) {
+div:nth-child(4) {
   animation-duration: 500ms;
 }
-div:nth-child(4) {
+div:nth-child(5) {
   animation-duration: 250ms;
 }
-div:nth-child(5) {
+div:nth-child(6) {
   animation-duration: 125ms;
 }
 
